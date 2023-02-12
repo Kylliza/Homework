@@ -67,3 +67,92 @@ print("The 12th element is", tuple2[12])
 print(sorted(tuple2))
 
 #3.4
+tuple3 = (1, 1, 1, 2) #???
+
+#3.5
+a, b, c, d = tuple3 #I don't know what I'm doing...
+print(a)
+print(b)
+print(c)
+print(d)
+
+#3.6
+tuple4 = (50,) #?
+print(tuple4)
+
+#3.7
+tuple5 = tuple2 + tuple3
+print(tuple5)
+
+#Section 4 Sets
+set1 = {1, 2, 3}
+#4.1
+set1.add("delicious orange") #, "juicy apple", "pear, plain and simple pear"])
+set1.add("juicy apple")
+print (set1)
+
+#4.2
+set1.add("Orange Subaru WRX")
+print(set1)
+
+#4.3
+oddset = {"Squirtle", "Warturtle", "Blastoise"}
+
+#4.4
+set3 = set1.union(oddset)
+print(set3)
+
+#4.5
+oddset.pop()
+print(oddset)
+
+#4.6
+set1.clear()
+print (set1)
+
+#4.7
+oddset.remove("Squirtle")
+
+set3.discard("juicy apple")
+
+#4.8
+print(set3)
+
+#Section 5
+Pokémon = {'Pokeball':"Squirtle", 'Master Ball': "Mewtwo", '1stGen':1509}
+
+#5.1
+Pokémon.get('Pokeball')
+
+#5.2
+Pokémon['1stGen'] = "Alexis"
+print(Pokémon)
+
+#5.3
+Pokémon.update({'Favorite color': 'orange'})
+print(Pokémon)
+
+#5.4
+Pokémon.update({'List':['rojo', 'amarillo', 'verde']})
+print(Pokémon)
+
+#5.5
+Pokémon.keys()
+print(Pokémon)
+
+#5.6
+Pokémon.values()
+print(Pokémon)
+
+#5.7
+
+Johto = Pokémon.copy()
+print("This is a copy", Johto)
+
+#5.8
+Johto.pop('List')
+print("This list got POPED!", Johto)
+
+#5.9
+Johto.clear()
+print("This dictionary got purged :(", Johto)
